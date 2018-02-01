@@ -1,0 +1,291 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#main-header {
+  background-color: blue;
+  height: 150px;
+  width: 1519px;
+  margin: 0 auto;
+}
+
+#main-teams {
+  font-family: rockwell;
+  font-size: 25px;
+  padding-left: 20px;
+  margin-top: 10px;
+  color: white;
+}
+
+#main-menu {
+  background-color: blue;
+  float: left;
+  height: 584px;
+  width: 300px;
+}
+
+#main-header img {
+  padding: 18px;
+}
+
+
+#main-container {
+  margin: 0 auto;
+}
+
+#tagline {
+  color: white;
+  font-family: Rockwell Nova Extra Bold;
+  font-size: 60px;
+  padding: 8px;
+  margin-top: -111px;
+  margin-left: 110px;
+}
+
+#tagline a {
+color: white;
+text-decoration: none;
+}
+
+#category {
+  float: left;
+  background-color: blue;
+  width: 300px;
+  height: 584px;
+  perspective: 9999px;
+  transform-style: preserve-3d;
+}
+
+#heroes-list {
+  float: left;
+  background-color: orange;
+  width: 539px;
+  height: 584px;
+  overflow-y: scroll;
+}
+
+#first-hero {
+  float: left;
+  background-color: grey;
+  width: 680px;
+  height: 584px;
+  overflow-y: scroll;text-align: left;
+}
+
+#superheroes1 {
+  width: 510px;
+  height: 230px;
+  background-image: url("../images/backgroundimage.jpg");
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#superheroes2 {
+  width: 510px;
+  height: 230px;
+  background-color: gray;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#superheroes3 {
+  width: 510px;
+  height: 230px;
+  background-color: gray;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#rate-hero {
+width: 644px;
+height: 188px;
+background-image: url("../images/backgroundimage.jpg");
+margin: 0 auto;
+margin-top: 10px;
+
+}
+
+#rate-hero1 {
+width: 648px;
+height: 530px;
+background-color: gray;
+margin: 0 auto;
+margin-top: -10px;
+}
+
+#Category1 {
+  list-style-type: none;
+  font-family: rockwell;
+  font-size: 19px;
+  padding-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+#Category1:hover{
+color: orange;
+box-sizing: border-box;
+transition: all 200ms ease;
+transform-style: preserve-3d;
+animation: ಠ_ಠ 5s infinite alternate ease-in-out -7.5s;
+animation-fill-mode: forwards;
+transform: rotateY(10deg) rotateX(10deg) translateZ(0);
+text-shadow: 4px 0 10px rgba(0, 0, 0, 0.13);
+}
+
+a {
+  text-decoration: none;
+}
+
+#heroImage img {
+  width: 195px;
+  height: 231px;
+  margin-left: -18px;
+  margin-top: -215px;
+}
+
+#heroName {
+  text-align: center;
+  color: blue;
+  font-family: rockwell;
+  font-size: 22px;
+  margin-left: 150px;
+}
+
+#heroDescription {
+  text-align: left;
+  color: blue;
+  font-family: rockwell;
+  font-size: 18px;
+  margin-left: 278px;
+}
+
+#rateHeroImage img {
+  width: 150px;
+height: 150px;
+border-radius: 50%;
+position: relative;
+left: 230px;
+top: 40px;
+}
+
+.more-info-btn {
+padding: 0px 20px;
+margin-top: 185px;
+color: white;
+font-size: 15px;
+background-color: blue;
+border-radius: 15px;
+font-family: rockwell;
+font-style: normal;
+}
+
+
+
+form.frmRate
+{
+	margin: 10px auto;
+  position: relative;
+}
+
+.rate {
+    float: left;
+}
+
+
+/* Hide radio */
+.rate > input[type='radio']
+{
+    display: none;
+}
+
+/* Order correctly by floating highest to the right */
+.rate > label.lblRating
+{
+    float: right;
+}
+
+/* The star of the show */
+.rate > label.lblRating:before
+{
+    display: inline-block;
+    font-size: 60px;
+    padding: 5px;
+    margin: 0;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: "\f005 "; /* full star */
+}
+
+/* Zero stars rating */
+.rate > label.lblRating:last-child:before
+{
+    content: "\f006 "; /* empty star outline */
+}
+
+/* Half star trick */
+.rate label.half:before
+{
+    content: "\f089 "; /* half star no outline */
+    position: absolute;
+    padding-right: 0;
+}
+
+/* Click + hover color */
+input:checked ~ label.lblRating,
+label.lblRating:hover, label.lblRating:hover ~ label
+{
+	color: #ffd900;
+}
+
+/* Hover highlights */
+input:checked + label.lblRating:hover, input:checked ~ label.lblRating:hover, /* highlight current and previous stars */
+input:checked ~ label.lblRating:hover ~ label.lblRating, /* highlight previous selected stars for new rating */
+label.lblRating:hover ~ input:checked ~ label.lblRating /* highlight previous selected stars */
+{
+	color: #f0cc00;
+}
+
+.divSubmit
+{
+	display: block;
+	width: 250px;
+	height: 100%;
+}
+
+.divSubmit > input[type='submit']
+{
+	width: 180px;
+	height: 60px;
+	font-family: anudawregular;
+	font-size: 20px;
+	border: 1px solid #000;
+}
+
+.divSubmit > input[type='submit']:hover
+{
+	background-color: #f0cc00;
+	color: #000000;
+	cursor: pointer;
+	border: 1px solid #000;
+}
+
+#comment {
+  height: 155px;
+  width: 380px;
+  margin-top: 111px;
+  margin-left: -395px;
+}
+
+#comment1 {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.nameOfHero {
+  text-align: center;
+  font-size: 20px;
+  color: blue;
+}
